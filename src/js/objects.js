@@ -61,7 +61,7 @@ export const animCubeOfSpheres = (viewer, spheres, point) => {
         .add(force.normalize().multiplyScalar(forceFactor));
       sphere.mesh.rotation.y = (Math.PI * forceFactor) / 2;
       sphere.mesh.rotation.z = (Math.PI * forceFactor) / 2;
-      const scale = lerp(1, 3, forceFactor);
+      const scale = lerp(1, 4, forceFactor);
       sphere.mesh.scale.setScalar(scale);
       sphere.mesh.position.copy(newPosition);
     });
