@@ -23,8 +23,9 @@ export default class Viewer {
       0.1,
       100
     );
-    camera.position.z = 20;
-    camera.position.y = 20;
+    camera.position.z = 25;
+    camera.position.y = 25;
+    camera.position.x = 25;
 
     this.addResizeAction("resize_camera", () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -48,7 +49,7 @@ export default class Viewer {
       antialias: true,
       pixelRatio: window.devicePixelRatio,
     });
-    renderer.setClearColor(0xfaf0e6);
+    renderer.setClearColor(0x141414);
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
     this.addResizeAction("resize_renderer", () => {
